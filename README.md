@@ -45,8 +45,8 @@ Dependency:
 - Perl	>=5.16
 
 Installing QIIME virtual environment:
-conda create --yes -n qiime191 -c bioconda python=2.7 numpy=1.10 matplotlib=1.4.3 mock nose qiime
-source activate qiime191 (redo this if you deactivated the environment)
+- conda create --yes -n qiime191 -c bioconda python=2.7 numpy=1.10 matplotlib=1.4.3 mock nose qiime
+- source activate qiime191 (redo this if you deactivated the environment)
 
 Contact Tian Renmao (rtian@ou.edu, University of Oklahoma) for questions.
 
