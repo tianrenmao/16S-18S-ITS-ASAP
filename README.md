@@ -38,9 +38,13 @@ After running, ASAP summarize statistics such as total read number, chimeric seq
 ASAP chooses the most commonly used and cited softwares. It has been testified using real data of our lab and give highly similar results to other pipelines.
 
 Dependency:
+
 RDP Classifier	>=2.12
+
 FastQC	>=0.11.5
+
 MAFFT	>=3.8.3
+
 Perl	>=5.16
 
 Contact Tian Renmao (rtian@ou.edu, University of Oklahoma) for questions.
