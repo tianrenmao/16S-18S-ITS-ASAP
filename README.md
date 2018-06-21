@@ -38,14 +38,15 @@ After running, ASAP summarize statistics such as total read number, chimeric seq
 ASAP chooses the most commonly used and cited softwares. It has been testified using real data of our lab and give highly similar results to other pipelines.
 
 Dependency:
+- QIIME	1.9.1
+- RDP Classifier	>=2.12
+- FastQC	>=0.11.5
+- MAFFT	>=3.8.3
+- Perl	>=5.16
 
-RDP Classifier	>=2.12
-
-FastQC	>=0.11.5
-
-MAFFT	>=3.8.3
-
-Perl	>=5.16
+Installing QIIME virtual environment:
+conda create --yes -n qiime191 -c bioconda python=2.7 numpy=1.10 matplotlib=1.4.3 mock nose qiime
+source activate qiime191 (redo this if you deactivated the environment)
 
 Contact Tian Renmao (rtian@ou.edu, University of Oklahoma) for questions.
 
