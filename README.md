@@ -1,4 +1,4 @@
-# Amplicon Sequence Analysis Pipeline (ASAP 1.4, May 2018)
+## Amplicon Sequence Analysis Pipeline (ASAP 1.4, May 2018)
 
 This is an automatic pipeline for analysis of amplicon sequence data including 16S, 18S and ITS. It wraps QIIME commands and complements them with additional analysis where QIIME is not good at, such as combine multiple sequencing runs, OTU clustering and chimeric removal with UPARSE, alignment filtering with Gblock, removing Chloroplast sequences.
 
@@ -25,6 +25,7 @@ Below is the work flow:
 - Beta diversity and plots - QIIME
 - Summary
 
+# Usage
 Running ASAP is quite easy and speedy. Users just need to put their sequence files and corresponding map files in different directories, copy the wrapper script and change parameters, and run the script. Wait for 1-10 hours and harvest the results. See the folder test_data for examples.
 
 1. Put your fastq files (R1, R2 and I1, I1 is optional, see the settings in the wrapper script) and corresponding map file in dataset_1, dataset_2, ...
@@ -37,17 +38,18 @@ After running, ASAP summarize statistics such as total read number, chimeric seq
 
 ASAP chooses the most commonly used and cited softwares. It has been testified using real data of our lab and give highly similar results to other pipelines.
 
-Dependency:
+# Dependency:
 - QIIME	1.9.1
 - RDP Classifier	>=2.12
 - FastQC	>=0.11.5
 - MAFFT	>=3.8.3
 - Perl	>=5.16
 
-Installing QIIME virtual environment:
+# Installing QIIME virtual environment:
 - conda create --yes -n qiime191 -c bioconda python=2.7 numpy=1.10 matplotlib=1.4.3 mock nose qiime
 - source activate qiime191 (redo this if you deactivated the environment)
 
-Contact Tian Renmao (rtian@ou.edu, University of Oklahoma) for questions.
+# Contact 
+Tian Renmao (rtian@ou.edu, IEG, University of Oklahoma).
 
 
