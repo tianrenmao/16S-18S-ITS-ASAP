@@ -373,7 +373,7 @@ print LOG "Removing singleton done.\n\n";
 print LOG "UPARSE: OTU clustering, chimera and singleton removal...\n";
 close LOG;
 system "rm -rf OTU; mkdir OTU; mkdir OTU/log";
-system "set -ex; $home/bin/usearch_10.0.240 -cluster_otus split/dereplicated.fasta -otus OTU/otus.fasta -uparseout OTU/log/out.up -relabel OTU -minsize 2 &>> log.txt; touch otu_done";
+system "set -ex; $home/bin/usearch_10.0.240 -cluster_otus split/dereplicated.fasta -otus OTU/otus.fasta -uparseout OTU/log/out.up -relabel OTU -minsize 2 >> log.txt; touch otu_done";
 
 unless(-e "otu_done"){
         die "OTU clustering failed.\n";
